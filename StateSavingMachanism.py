@@ -5,8 +5,8 @@ import os
 from autogen_agentchat.agents import AssistantAgent
 from autogen_agentchat.ui import Console
 from autogen_ext.models.openai import OpenAIChatCompletionClient
-
-os.environ["OPENAI_API_KEY"]= "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"
+#Provide OPENAI_API_KEY
+os.environ["OPENAI_API_KEY"]= "OPENAI_API_KEY"
 async def main():
     openai_model_client = OpenAIChatCompletionClient(
         model="gpt-4o-mini",
