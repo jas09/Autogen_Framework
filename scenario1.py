@@ -15,8 +15,6 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
 os.environ["JIRA_URL"]="https://ajjujas.atlassian.net/"
 os.environ["JIRA_USERNAME"]="ajju.jas@gmail.com"
-#Provide JIRA_API_TOKEN
-os.environ["JIRA_API_TOKEN"] ="JIRA_API_TOKEN"
 os.environ["JIRA_PROJECTS_FILTER"] = "AL"
 async def main():
     openai_model_client = OpenAIChatCompletionClient(
