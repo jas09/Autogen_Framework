@@ -25,7 +25,7 @@ async def main():
                                                 "--dns", "8.8.8.8", "--dns", "1.1.1.1",
                                                 "-e", f"JIRA_URL={os.environ['JIRA_URL']}",
                                                 "-e", f"JIRA_USERNAME={os.environ['JIRA_USERNAME']}",
-                                                "-e", f"JIRA_API_TOKEN={os.environ['JIRA_API_TOKEN']}",
+                                                "-e", f"JIRA_API_TOKEN={JIRA_API_TOKEN}",
                                                 "-e", f"JIRA_PROJECTS_FILTER={os.environ['JIRA_PROJECTS_FILTER']}",
                                                 "ghcr.io/sooperset/mcp-atlassian:latest"])
     playwright_server_params = StdioServerParams(command="npx",args=["@playwright/mcp@latest"])
