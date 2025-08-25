@@ -6,8 +6,10 @@ from autogen_agentchat.conditions import MaxMessageTermination
 from autogen_agentchat.teams import RoundRobinGroupChat
 from autogen_agentchat.ui import Console
 from autogen_ext.models.openai import OpenAIChatCompletionClient
-#Provide OPENAI_API_KEY
-os.environ["OPENAI_API_KEY"]= "OPENAI_API_KEY"
+from dotenv import load_dotenv
+
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 async def main():
     openai_model_client = OpenAIChatCompletionClient(
         model="gpt-4o-mini",
