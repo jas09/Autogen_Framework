@@ -9,8 +9,10 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 from autogen_ext.tools.mcp import StdioServerParams, McpWorkbench
 from dotenv import load_dotenv
 from Utils.Agents_SystemMessage import AgentsSystemMessage
-#Provide OPENAI_API_KEY
-os.environ["OPENAI_API_KEY"]= "OPENAI_API_KEY"
+
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+JIRA_API_TOKEN = os.getenv("JIRA_API_TOKEN")
 os.environ["JIRA_URL"]="https://ajjujas.atlassian.net/"
 os.environ["JIRA_USERNAME"]="ajju.jas@gmail.com"
 #Provide JIRA_API_TOKEN
