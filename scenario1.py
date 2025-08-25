@@ -9,8 +9,8 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 from autogen_ext.tools.mcp import StdioServerParams, McpWorkbench
 
 from Utils.Agents_SystemMessage import AgentsSystemMessage
-
-os.environ["OPENAI_API_KEY"]= "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"
+#Provide OPENAI_API_KEY
+os.environ["OPENAI_API_KEY"]= "OPENAI_API_KEY"
 os.environ["JIRA_URL"]="https://ajjujas.atlassian.net/"
 os.environ["JIRA_USERNAME"]="ajju.jas@gmail.com"
 os.environ["JIRA_API_TOKEN"] ="ATCTT3xFfGN0Bx7pESpkgPW_PpJ3ATUprD3qBNe-cgAhbGr8U0WMfhMHQAuVwQsO-nBMzP-b2hhOVbJMHyuqPwQAw6rZQBz2SCrE76bFPjyTiAolQ4nqqS12bem2GqwHgWHJxyGCkOi7pz-MPR5_BZc29FvI9swSyrPvQur_UIF49aJCY2xLWGM=BA655C7F"
