@@ -1,0 +1,7 @@
+# Safer defaults; approve when Codex wants to write outside its workspace.
+approval_policy = "on-request"
+sandbox_mode    = "workspace-write"
+
+[profiles.default]
+approval_policy = "on-request"
+sandbox_mode    = "workspace-write"

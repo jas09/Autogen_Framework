@@ -1,0 +1,8 @@
+Goal:
+Bug_agent:
+1.	Search for bugs using "Bugs" filter.
+2.	Design a stable user flow that can be used as a smoke test.
+3.	Use real URLs like:
+https://rahulshettyacademy.com/seleniumPractise/#/
+AutomationAgent:
+1.	Once ready, automate this flow using Playwright MCP and execute it

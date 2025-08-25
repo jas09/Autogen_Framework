@@ -1,0 +1,32 @@
+Multiplication Problem: 34 x 23
+
+Steps to Solve:
+1. Arrange the numbers:
+   34
+ x 23
+ -----
+
+2. Multiply the bottom number's ones place (3) by the top number (34):
+   3 x 34 = 102
+   
+   34
+ x 23
+ -----
+    102  (This is 34 times 3)
+
+3. Multiply the bottom number's tens place (2) by the top number (34), which is 20:
+   2 x 34 = 68, written as 680:
+   
+   34
+ x 23
+ -----
+    102
+ +680  (This is 34 times 2, shifted one place to the left)
+
+4. Add the results together:
+   102
+ +680
+ -----
+    782
+
+Final Result: 34 x 23 = 782
