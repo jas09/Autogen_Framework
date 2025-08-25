@@ -8,8 +8,8 @@ from autogen_ext.models.openai import OpenAIChatCompletionClient
 from dotenv import load_dotenv
 
 from Framework.AgentFactory import AgentFactory
-#Provide OPENAI_API_KEY
-os.environ["OPENAI_API_KEY"]= "OPENAI_API_KEY"
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 async def main():
     openai_model_client = OpenAIChatCompletionClient(model="gpt-4o-mini")
 
