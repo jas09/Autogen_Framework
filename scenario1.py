@@ -13,7 +13,8 @@ from Utils.Agents_SystemMessage import AgentsSystemMessage
 os.environ["OPENAI_API_KEY"]= "OPENAI_API_KEY"
 os.environ["JIRA_URL"]="https://ajjujas.atlassian.net/"
 os.environ["JIRA_USERNAME"]="ajju.jas@gmail.com"
-os.environ["JIRA_API_TOKEN"] ="ATCTT3xFfGN0Bx7pESpkgPW_PpJ3ATUprD3qBNe-cgAhbGr8U0WMfhMHQAuVwQsO-nBMzP-b2hhOVbJMHyuqPwQAw6rZQBz2SCrE76bFPjyTiAolQ4nqqS12bem2GqwHgWHJxyGCkOi7pz-MPR5_BZc29FvI9swSyrPvQur_UIF49aJCY2xLWGM=BA655C7F"
+#Provide JIRA_API_TOKEN
+os.environ["JIRA_API_TOKEN"] ="JIRA_API_TOKEN"
 os.environ["JIRA_PROJECTS_FILTER"] = "AL"
 async def main():
     openai_model_client = OpenAIChatCompletionClient(
